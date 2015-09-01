@@ -24,4 +24,13 @@ $ php composer.phar install
 
 ## Usage
 
-See [examples](https://github.com/nikolaposa/num-converter/blob/master/examples).
+```php
+<?php
+use NumConverter\StaticConverter as NumConverter;
+use NumConverter\NumeralSystems;
+
+echo NumConverter::convert(2015, NumeralSystems::DECIMAL, NumeralSystems::ROMAN); //MMXV
+
+```
+
+See [examples](https://github.com/nikolaposa/num-converter/tree/master/examples).
