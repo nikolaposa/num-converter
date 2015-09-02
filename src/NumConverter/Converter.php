@@ -16,18 +16,11 @@ interface Converter
     public function getSupportedSystems();
 
     /**
-     * Tells whether converter is capable of handling conversion between some systems.
-     *
-     * @param array $systems
-     * @return bool
-     */
-    public function canHandle(array $systems);
-
-    /**
      * @param mixed $number
-     * @param string $system Numeral system into which number should be converted.
+     * @param string $fromSystem Numeral system of the number.
+     * @param string $toSystem Numeral system into which number should be converted.
      * @return mixed
      * @throws UnsupportedNumeralSystemException
      */
-    public function convert($number, $system);
+    public function convert($number, $fromSystem, $toSystem);
 }

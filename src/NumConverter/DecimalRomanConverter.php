@@ -1,7 +1,6 @@
 <?php
 namespace NumConverter;
 
-use NumConverter\Exception\UnsupportedNumeralSystemException;
 use NumConverter\Exception\InvalidArgumentException;
 use NumConverter\Exception\RuntimeException;
 
@@ -10,7 +9,7 @@ use NumConverter\Exception\RuntimeException;
  *
  * @author Nikola Posa <posa.nikola@gmail.com>
  */
-final class DecimalRomanConverter extends BaseConverter
+final class DecimalRomanConverter extends AbstractConverter
 {
     /**
      * @var array
@@ -25,6 +24,9 @@ final class DecimalRomanConverter extends BaseConverter
         1000 => 'M'
     );
 
+    /**
+     * @return array
+     */
     public function getSupportedSystems()
     {
         return array(NumeralSystems::DECIMAL, NumeralSystems::ROMAN);
@@ -32,21 +34,17 @@ final class DecimalRomanConverter extends BaseConverter
 
     /**
      * @param mixed $number
-     * @param string $system
+     * @param string $fromSystem
+     * @param string $toSystem
      * @return mixed
-     * @throws UnsupportedNumeralSystemException
      */
-    public function convert($number, $system)
+    public function doConvert($number, $fromSystem, $toSystem)
     {
-        if ($system == NumeralSystems::ROMAN) {
+        if ($toSystem == NumeralSystems::ROMAN) {
             return $this->dec2roman($number);
         }
 
-        if ($system == NumeralSystems::DECIMAL) {
-            return $this->roman2dec($number);
-        }
-
-        throw new UnsupportedNumeralSystemException("Unsupported system supplied for conversion: '$system'");
+        return $this->roman2dec($number);
     }
 
     /**
