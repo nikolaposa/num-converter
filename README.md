@@ -33,4 +33,4 @@ echo NumConverter::convert(2015, NumeralSystems::DECIMAL, NumeralSystems::ROMAN)
 
 ```
 
-See [examples](https://github.com/nikolaposa/num-converter/tree/master/examples).
+See [more examples](https://github.com/nikolaposa/num-converter/tree/master/examples).
