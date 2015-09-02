@@ -25,5 +25,8 @@
     },
     "autoload": {
         "psr-4": { "NumConverter\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "NumConverter\\Tests\\": "tests/" }
     }
 }

@@ -13,4 +13,4 @@ echo "\n\n";
 
 $decRomanConverter = new DecimalRomanConverter();
 echo '2015 in Roman: ' . $decRomanConverter->convert(100, NumeralSystems::DECIMAL, NumeralSystems::ROMAN) . "\n";
-echo 'MCMLXXXVII in Roman: ' . $decRomanConverter->convert('MCMLXXXVII', NumeralSystems::ROMAN, NumeralSystems::DECIMAL);
+echo 'MCMLXXXVII in Decimal: ' . $decRomanConverter->convert('MCMLXXXVII', NumeralSystems::ROMAN, NumeralSystems::DECIMAL);
