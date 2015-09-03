@@ -12,9 +12,8 @@ Install the library using [composer](http://getcomposer.org/). Add the following
 ```json
 {
     "require": {
-        "nikolaposa/num-converter": "dev-master"
-    },
-    "minimum-stability": "dev"
+        "nikolaposa/num-converter": "~1.0"
+    }
 }
 ```
 
