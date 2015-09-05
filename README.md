@@ -12,7 +12,7 @@ Install the library using [composer](http://getcomposer.org/). Add the following
 ```json
 {
     "require": {
-        "nikolaposa/num-converter": "~1.0"
+        "nikolaposa/num-converter": "1.*"
     }
 }
 ```
