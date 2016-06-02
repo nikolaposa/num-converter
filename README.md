@@ -1,9 +1,9 @@
 # Numbers converter
 
-[![Build Status](https://travis-ci.org/nikolaposa/num-converter.svg?branch=master)](https://travis-ci.org/nikolaposa/num-converter)
-
 PHP library which provides consistent interface for converting numbers between various numeral systems,
 for example Binary, Hexadecimal, Roman, etc.
+
+[![Build Status](https://travis-ci.org/nikolaposa/num-converter.svg?branch=master)](https://travis-ci.org/nikolaposa/num-converter)
 
 ## Installation
 
