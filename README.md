@@ -7,20 +7,11 @@ for example Binary, Hexadecimal, Roman, etc.
 
 ## Installation
 
-Install the library using [composer](http://getcomposer.org/). Add the following to your `composer.json`:
-
-```json
-{
-    "require": {
-        "nikolaposa/num-converter": "1.*"
-    }
-}
-```
-
-Tell composer to download NumConverter by running `install` command:
+The preferred method of installation is via [Composer](http://getcomposer.org/). Run the following
+command to install the latest version of a package and add it to your project's `composer.json`:
 
 ```bash
-$ php composer.phar install
+composer require nikolaposa/num-converter
 ```
 
 ## Usage
@@ -35,3 +26,14 @@ echo NumConverter::convert(2015, NumeralSystems::DECIMAL, NumeralSystems::ROMAN)
 ```
 
 See [more examples](https://github.com/nikolaposa/num-converter/tree/master/examples).
+
+## Author
+
+**Nikola Poša**
+
+* https://twitter.com/nikolaposa
+* https://github.com/nikolaposa
+
+## Copyright and license
+
+Copyright 2016 Nikola Poša. Released under MIT License - see the `LICENSE` file for details.
